@@ -30,6 +30,7 @@ body{
   width: 30rem;
   background-color: #181818;
   border-radius: 1rem;
+
 }
 
 .chatbot{
@@ -104,9 +105,7 @@ input:focus{
   display: flex;
   flex-direction: column;
 }
-.message-text{
-  display: flex;
-}
+
 
 .message-box.user{
   flex-direction: row-reverse;
@@ -143,10 +142,11 @@ input:focus{
 
 @media only screen 
   and (min-device-width : 428px) 
-  and (max-device-width : 926px) {
+  and (max-device-width : 936px) {
     
     .chatbot-container{
       width: 90%;
       min-height: 80vh;
+      max-width: 90%;
     }
 }
