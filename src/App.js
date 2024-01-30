@@ -7,7 +7,7 @@ import { TbSend } from "react-icons/tb";
 
 function App() {
   const MENSAGEM_INICIAL =
-    "Olá, eu sou o LINK, o assistente virtual dos estagiatos 2023. Como posso te ajudar?";
+    "Olá, eu sou o Conectatos, o assistente virtual dos estagiatos 2023. Como posso te ajudar?";
   const [inputText, setInputText] = useState("");
   const [allMessages, setAllMessages] = useState([]);
 
