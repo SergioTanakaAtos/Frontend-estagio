@@ -1,5 +1,5 @@
-import logo from "./assets/Image-removebg-preview.png";
-import botAvatar from "./assets/aLogobyDesigner.png";
+import logo from "./assets/logo512.svg";
+import botAvatar from "./assets/image.svg";
 import userAvatar from "./assets/humnaLogobyDesigner.png";
 import "./App.css";
 import React, { useEffect, useState } from "react";
@@ -7,7 +7,7 @@ import { TbSend } from "react-icons/tb";
 
 function App() {
   const MENSAGEM_INICIAL =
-    "Olá, eu sou o Conectatos, o assistente virtual dos estagiatos 2023. Como posso te ajudar?";
+    "Olá, eu sou o Beri, o assistente virtual. Como posso te ajudar?";
   const [inputText, setInputText] = useState("");
   const [allMessages, setAllMessages] = useState([]);
 
@@ -43,7 +43,7 @@ function App() {
   };
   const sendUserMessageToBot = async (userMessage) => {
     try {
-      const response = await fetch(`http://localhost:8000/gptIntegration`, {
+      const response = await fetch(`http://localhost:8000/api`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -183,9 +183,9 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-      </header>
+      </header> */}
 
       <div className="App-body">
         <div className="chatbot-container">
